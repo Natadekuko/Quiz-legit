@@ -1,0 +1,112 @@
+﻿:root {
+    --AccColor: #f6b42d;
+    --AccColorHover: #ffc137;
+    --AccColorBorder: #cfa117;
+}
+
+body {
+    background: #70a2e9;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.container {
+    width: 600px;
+    height: 500px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 10px 50px 50px 50px;
+    border-radius: 50px;
+    border: 2px solid #cbcbcb;
+    box-shadow: 10px 15px 5px #6092c9;
+}
+
+.top {
+    display: flex;
+    flex-wrap: nowrap
+}
+
+.container h1 {
+    color: #fff;
+    font-size: 3em;
+    border-radius: 50px;
+    color: black;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+#reloadButton {
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: transparent;
+    border-color: transparent;
+    margin-right: 5%;
+    padding: 0;
+    height: max-content;
+    top: -50%;
+    position: relative;
+    transform: translateY(100%)
+}
+
+@keyframes mean {
+
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 720deg;
+    }
+}
+
+#reloadImg {
+    width: 20px;
+    height: 20px;
+}
+
+#question {
+    font-size: 30px;
+    color: #5a6772;
+}
+
+.button-grp {
+    margin-top: 30px;
+
+}
+
+#choice1,
+#choice2,
+#choice3,
+#choice0 {
+    width: 250px;
+    font-size: 20px;
+    border-radius: 15px;
+    margin: 10px 40px 10px 7.6px;
+    padding: 10px 10px;
+    color: #222;
+    border: 1px solid var(--AccColorBorder);
+    background: var(--AccColor);
+}
+
+
+
+#choice1:hover,
+#choice2:hover,
+#choice3:hover,
+#choice0:hover {
+    cursor: pointer;
+    background: var(--AccColorHover)
+}
+
+#choice1:focus,
+#choice2:focus,
+#choice3:focus,
+#choice0:focus {
+    outline: 0;
+}
+
+#progress {
+    color: #2b2b2b;
+    font-size: 1em;
+    text-align: center;
+}
